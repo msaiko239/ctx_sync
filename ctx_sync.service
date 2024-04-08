@@ -1,0 +1,12 @@
+[Unit]
+Description=ctx_sync service
+After=multi-user.target
+Conflicts=getty@tty.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/ctx_sync.py
+StandardInput=tty-force
+
+[Install]
+WantedBy=multi-user.target
