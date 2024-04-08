@@ -3,6 +3,10 @@ set -x
 
 pip3 install flask
 pip3 install pycurl
+pip3 install urllib3
+
+sudo firewall-cmd --permanent --add-port=5000/tcp
+firewall-cmd --reload
 
 touch /var/log/ctx_sync.log
 

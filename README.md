@@ -13,7 +13,7 @@ run the install script
 
 `./install.sh`
 
-# USing the application
+# Using the application
 You need to edit the main python file to match the ip addresses of your system.
 
 `vim /opt/ctx_sync.py`
@@ -32,3 +32,9 @@ Change the vaules of lines 12, 13, 14 and 15
 Then restart the service
 
 `systemctl restart ctx_sync`
+
+# Requirements
+
+GIT must be installed to clone the repo
+
+pip must be installed
